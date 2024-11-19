@@ -1,0 +1,19 @@
+{
+    "name": "giovanesantos/php-security",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Giovanesantos\\PhpSecurity\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Giovane Santos Silva",
+            "email": "giovanesantos1999@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-openssl": "*",
+        "twig/twig": "^3.0"
+    }
+}

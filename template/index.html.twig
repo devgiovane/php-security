@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<main>
+    <div>
+        <label for="json">Payload</label>
+        <input id="json" type="text" placeholder="JavaScript Object Payload" />
+        <label for="secret">Secret Key</label>
+        <input id="secret" type="text" placeholder="Secret Key" value="{{ secretKey }}" />
+        <button id="obfuscate" type="button">Obfuscate</button>
+    </div>
+    <div>
+        <pre id="result"></pre>
+    </div>
+</main>
+{% endblock %}
+{% block javascripts %}
+<script defer src="/index.js"></script>
+{% endblock %}
